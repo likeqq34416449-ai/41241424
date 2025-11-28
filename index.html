@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python 小宇宙</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Noto Sans TC", sans-serif;
+            background: #f4fbff;
+            color: #333;
+        }
+
+        /* 新版側邊導覽列 */
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background: #2aa5a1;
+            color: white;
+            padding: 30px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 18px 0;
+            font-size: 18px;
+        }
+
+        /* 主體內容 */
+        .content {
+            margin-left: 260px;
+            padding: 40px;
+        }
+
+        /* 主視覺：左圖右文 */
+        .hero {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero img {
+            width: 200px;
+            margin-right: 40px;
+        }
+
+        .hero h1 {
+            margin-bottom: 12px;
+            font-size: 30px;
+            color: #1e6f6b;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            background: #1e6f6b;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* 卡片區塊 */
+        .courses {
+            margin-top: 50px;
+        }
+
+        .courses h2 {
+            font-size: 26px;
+            color: #1e6f6b;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #238784;
+        }
+
+        /* 資源區 */
+        .resources {
+            margin-top: 50px;
+        }
+
+        .resources h2 {
+            color: #1e6f6b;
+        }
+
+        .resources li {
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 側邊導覽列 -->
+    <div class="sidebar">
+        <h2>🐍 Python 小宇宙</h2>
+        <a href="#">首頁</a>
+        <a href="#">課程介紹</a>
+        <a href="#">線上資源</a>
+    </div>
+
+    <div class="content">
+
+        <!-- 主視覺 -->
+        <div class="hero">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f40d.png" alt="snake">
+            <div>
+                <h1>歡迎來到 Python 小宇宙！</h1>
+                <p>一步步帶你探索程式設計的宇宙，用最簡單的方式掌握 Python 精髓。</p>
+                <button>開始探索</button>
+            </div>
+        </div>
+
+        <!-- 課程 -->
+        <div class="courses">
+            <h2>學習主題</h2>
+
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>🔹 程式基礎</h3>
+                    <p>掌握變數、流程控制、函式等 Python 基礎概念。</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>🔹 數據分析</h3>
+                    <p>使用 Pandas 與 NumPy 處理資料，建立分析流程。</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>🔹 網站開發</h3>
+                    <p>透過 Flask 或 FastAPI 建立屬於你的後端服務。</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>🔹 自動化任務</h3>
+                    <p>利用 Python 讓重複工作自動化，提高效率。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 資源 -->
+        <div class="resources">
+            <h2>線上資源</h2>
+            <ul>
+                <li>Python 官方文件</li>
+                <li>Real Python 教學文章</li>
+                <li>MDN Web Docs</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
